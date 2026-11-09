@@ -1,0 +1,33 @@
+[project]
+name = "bayesian-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Angelico", email = "angelicogfa@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "arviz>=1.3.0",
+    "bambi>=0.20.0",
+    "ipywidgets",
+    "jinja2>=3.1.6",
+    "kulprit>=0.6.1",
+    "matplotlib>=3.11.1",
+    "numba>=0.67.0",
+    "numpy>=2.5.3",
+    "nutpie>=0.16.11",
+    "pandas>=3.0.5",
+    "preliz>=0.28.0",
+    "pymc>=6.3.1",
+    "pymc-bart>=0.13.1",
+    "scipy>=1.18.1",
+    "xarray>=2026.7.0",
+]
+
+[project.scripts]
+bayesian-analysis = "bayesian_analysis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
